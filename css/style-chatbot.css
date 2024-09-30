@@ -1,0 +1,102 @@
+:root {
+    --peekobot-avatar: url("../img/avatar-pagina.png");
+}
+
+#peekobot-inner {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    position: relative;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+#peekobot-inner::-webkit-scrollbar { 
+    display: none;  /* Chrome Safari */
+}
+
+.chat-response,
+.chat-ask {
+    opacity: 0;  /* Set to activated to show */
+    transform: translateY(-50%); /* Set to activated to move down */
+    transition: all 0.3s 0.3s;
+    border-radius: 12px;
+    background-color: hsl(0, 0%, 90%);
+    padding: 0.5rem 0.7rem;
+    line-height: 1.4;
+    color: black;
+    width: 80%;
+    margin-bottom: 0.5rem;
+}
+.chat-response {
+    margin-left: 26px;
+    position: relative;
+}
+
+.chat-ask {
+  background-color: hsl(207, 96%, 55%);
+  margin-right: 0;
+  margin-left: auto;
+  color: hsl(0, 0%, 100%);
+}
+.choices {
+  opacity: 0; /* Set to active to show */
+  transform: translateY(-50%); /* Set to activated to move down */
+  transition: all 0.3s 0.3s;
+  transition: opacity 0.3s 0.3s;
+  margin-top: 0.5rem;
+  margin-left: 22px;
+}
+
+.choice:disabled {
+  color: hsl(0, 0%, 80%);
+  border-color: hsl(0, 0%, 80%);
+}
+.activated {
+  opacity: 1;
+  transform: translateY(0);
+}
+@keyframes scale-out-ver-bottom {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+    opacity: 1;
+  }
+}
+.ocultar-chatbot{
+  -webkit-animation: scale-out-ver-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: scale-out-ver-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+
+
+@keyframes scale-in-ver-bottom {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+    opacity: 1;
+  }
+}
+.mostrar-chatbot{
+  display: flex !important;
+  -webkit-animation: scale-in-ver-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: scale-in-ver-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}

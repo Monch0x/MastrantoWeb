@@ -1,0 +1,301 @@
+/* ----------------  Colores de la franja  ----------------- */
+div.franja{
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: 92%;
+}
+div.franja input{
+    border:none;
+    height: 7px;
+}
+.azul{
+    background-color: #4ad9fa;
+    width: 43%;
+}
+.verde{
+    background-color: #91be1f;
+    width: 3.5%;
+}
+.naranja{
+    background-color: #f08f00;
+    width: 3.5%;
+}
+.fuxia{
+    background-color: #e4007f;
+    width: 3.5%;
+}
+.morado{
+    background-color: #921b80;
+    width: 3.5%;
+}
+.azul_oscuro{
+    background-color: #022d7c;
+    width: 43%;
+}
+.redes_sociales{
+    margin: 0% 0% 0% 90%;
+    z-index: 999;
+    position: absolute;
+}
+.redes_sociales img{
+    width: 19%;
+}
+.busqueda-icon{
+    margin: 0% 0% 0% 20%;
+}
+.container_carousel {
+  margin-top: 30px;
+  width: 65%;
+  left: 0;
+  position: absolute;
+}
+
+/* ------------------------ carousel instagram -----------------------------------*/
+
+.carousel-inner img {
+	display:block;
+	margin:auto;
+	/*margin-left: 10vw;*/
+	/*width: 53%;*/
+	width: 63%;
+    /*height: auto;*/
+    height: 54vh;
+	border-radius: 7px;
+	
+	/*para cambiar
+	width: 63%;
+	quitar: margin-left: 10vw;
+	*/
+	
+}
+div.carousel {
+    width: 30%;
+    /*position: absolute;*/
+    right: 0;
+	/*top: 108px;*/
+    /*margin-top: 52px;*/
+    margin-top: 26px;
+    /*para cambiar
+    margin-top: 26px;
+    position: absolute; top: 108px; quitar 
+    */
+}
+ol.carousel-indicators {
+	/*position: absolute;*/
+	position: relative;
+    right: 0;
+    bottom: -42px;
+    left: 0;
+    z-index: 10002;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    list-style: none;
+    /*margin-right: 0;*/
+    /*margin-left: 7vw;*/
+    
+    
+    /*para cambiar
+    position: relative;
+    quitar: margin-right: 0; margin-left: 7vw;
+    */
+    
+}
+ol.carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 8px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -962px;
+    cursor: pointer;
+    background-clip: initial;
+    border-top: 0px solid transparent;
+    border-bottom: 3px solid transparent;
+    opacity: 1; /*original .5*/
+    transition: opacity .6s eas;
+    border-radius: 999px;
+}
+ol.carousel-indicators .active {
+    opacity: 1 !important;
+	width: 30px;
+    border-radius: 10px;
+}
+
+#circulo-0{
+	background: #4ad9fa !important;
+}
+
+#circulo-1{
+	background: #91be1f !important;
+}
+#circulo-2{
+	background: #f08f00 !important;
+}
+#circulo-3{
+	background: #e3007e !important;
+}
+#circulo-4{
+    background: #921b80 !important;
+}
+#circulo-5{
+    background: #4ad9fa !important;
+}
+#circulo-6{
+    background: #0a4e9c !important;
+}
+#circulo-7{
+    background: #02286f !important;
+}
+
+#circulo-8{
+    background: #f08f00 !important;
+}
+
+#circulo-9{
+    background: #e3007e !important;
+}
+
+#circulo-10{
+    background: #91be1f !important;
+}
+
+#circulo-11{
+    background: #4ad9fa !important;
+}
+
+#circulo-12{
+    background: #921b80 !important;
+}
+
+#circulo-13{
+    background: #0a4e9c !important;
+}
+
+#circulo-14{
+    background: #4ad9fa !important;
+}
+
+#circulo-15{
+    background: #f08f00 !important;
+}
+
+#circulo-16{
+    background: #02286f !important;
+}
+
+
+.carousel-inner{
+	position: relative;
+	top: 2px;
+	background-size: cover;
+	-moz-background-size: cover;
+}
+div.carousel-caption h2{
+	margin: 330px;
+	font-family: 'GothamBook';
+	font-size: 30pt;
+	color: #3d7ba8;
+}
+div.carousel-caption h3{
+	font-family: 'GothamBook';
+	font-size: 40pt;
+	color: #0a2c75be;
+	margin: 120px;
+	position: relative;
+}
+div.carousel-caption h4{
+	font-family:'GothamBook';
+	font-size: 40pt;
+	color: #0a2c75be;
+	margin: 120px;
+	display: block;
+}
+div.carousel-caption h5{
+	font-family: 'GothamBook';
+	font-size: 40pt;
+	color: #0a2c75be;
+	margin: 200px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+	display:none;
+}
+
+
+/* ----------------------------------- Estilos carrusel nuevo ------------------------------------------ */
+
+
+  .swiper-container {
+	height:60%;
+	margin: 0px auto auto auto;
+	}
+	.swiper-container img{
+	height:auto;
+	width:100%;
+	margin:-25px auto 10px auto;
+	/*Bordes redondeados originalmente no los tenia*/
+	border-radius: 25px;
+	}
+	.swiper-slide {
+	background-position: center;
+	background-size: cover;
+	height:100%;
+	width:100%;
+	}
+	div.swiper-pagination.swiper-pagination-bullets{
+	bottom: -68px;
+	height:50px;
+	font-size:2rem;
+	}  
+	span.swiper-pagination-bullet{
+	height: 10px;
+	width: 10px;
+	}
+	span#circulo-1{
+		background: #91be1f;
+	}
+	span.swiper-pagination-bullet-active{
+	width: 30px;
+    border-radius: 10px;
+	}
+
+    /* Sombra al girar la imagen del efecto cubo*/	
+	.swiper-3d div.swiper-slide-shadow-right {
+        background-image: none;
+    }
+    
+    .swiper-3d div.swiper-slide-shadow-left {
+        background-image: none;
+    }
+
+/* ---------------------------------------- Estilo carrusel infinito aliados ---------------------------------------- */ 
+
+
+
+
+/* ------------------------------------------ Carrusel aliados -------------------------------------------- */
+
+.main {
+  font-family:Arial;
+  width:90.5%;
+  display:block;
+  margin:0 auto;
+  height: auto;
+}
+.slider-for{
+	display: none !important; 
+  }
+.slick-dots{
+	display: none !important; 
+}
+.slick-next:before, .slick-prev:before {
+    font-size: 22px !important;
+    line-height: 1;
+    opacity: .75;
+    color: #303030 !important;
+}

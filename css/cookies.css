@@ -1,0 +1,42 @@
+#cookie {
+    position: fixed;
+    display: block;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 100001;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+#accept {
+      display: none;
+      
+      &:not(:checked) ~ span::before {
+        content: "Este sitio puede utilizar “cookies” para funcionar correctamente. Al seguir navegando está de acuerdo, aunque puede cambiar la configuración de su explorador";
+        display: inline;
+      }
+      
+      &:checked ~ * {
+        display: none;
+        pointer-events: none;
+      }
+}
+ 
+#btncookie{
+    width: fit-content;
+    height: auto;
+    padding: 0% 1%;
+    border: none;
+    margin: 1.5% 0%;
+}  
+
+#btncookie label{
+    margin: 0%;
+    cursor: pointer;
+}
+  
